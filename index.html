@@ -9,6 +9,115 @@
 <body>
     <form enctype="multipart/form-data" action="index.html" method="get">
         <!-- FORM FIELDS HERE -->
+        <fieldset>
+           <div>
+            <label for="name">Name:</label>
+           </div>
+            <legend>Personal Information</legend>
+            <input type="text" id="name" name="name">
+
+            <div>
+                <label for="email">Email:</label>
+            </div>
+            <input type="text" id="email" name="Email" pattern="[A-Za-z0-9]+@gmail\.com" required >
+
+
+            <div>
+                <label for="password">Password:</label>
+            </div>
+            <input type="password" id="Password" name="Password" pattern="[a-zA-Z0-9]{12,}">
+
+
+            <div>
+                <label for="date">Date of Birth:</label>
+            </div>
+            <input type="date" id="date" name="date" >
+
+        </fieldset>
+
+        <fieldset>
+                <div>
+                    <label for="color">Favourite color:</label>
+                </div>
+                    <legend>Preferences</legend>
+                    <input type="color" id="Favourite color" name="Favourite color" value="Black">
+
+
+                <div>
+                    <label for="Hobbies">Hobbies:</label>
+                </div>
+                <input type="Hobbies" id="Hobbies" name="Hobbies">
+
+                <div>
+                    <label for="experience">Experience Level:</label>
+                </div>
+                <input type="range" id="experience" name="experience" min="10" max="50" step="10" >
+        </fieldset>
+
+
+        <fieldset>
+            <div>
+                <label for="Contact">Preferred Contact Method:</label>
+            </div>
+            <legend>Contact Preferences</legend>
+            <select name="Contact  Method" id="Contact">
+                <option value="Sms">SMS</option>
+                <option value="Email" selected>Email</option>
+                <option value="Gmail">Mail</option>
+                <option value="Fax">Fax</option>
+            </select>
+
+            <div>
+                <label for="">Subscibe to Newsletter:</label>
+            </div>
+                <input type="checkbox" name="subscribe to newsletter" value="newsletter" id="newsletter"/>
+            
+        </fieldset>
+
+
+        
+        <fieldset>
+            <div>
+                <label for="Gender">Gender:</label>
+            </div>
+            <legend>Preferences</legend>
+            <input type="radio" name="Male" value="Male" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="Female" id="Female" value="Female" id="Female">
+            <label for="Female">Female</label>
+            <input type="radio" name="Other" value="Other" id="Other">
+            <label for="Other">Other</label>
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>More Information</legend>
+            <div>
+                <label for="Bio">Bio:</label>
+            </div>
+            <textarea name="Bio" cols="30" id="Bio"></textarea>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Upload Documents</legend>
+            <div>
+                <label for="Resume">Resume and Other Certificate:</label>
+            </div>
+            <input type="file" name="file" accept="doc, docx, pdf, jpg, png">
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Submission</legend>
+                <input id="submit" type="submit">
+                <input id="reset" type="reset">
+        </fieldset>
+
+        
+            
     </form>
+
 </body>
 </html>
